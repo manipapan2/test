@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+*:focus{
+    outline: 0;
+}
+
+/*div*/
+body{
+    display: flex;
+    font-size: 16px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    justify-content: center ;
+    align-items: center ;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(nope.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.bodyFake{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    background-color: transparent;
+    background-image: url(nope.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    
+} 
+
+
+ .fp{
+    width: 320px ;
+    height: 500px;
+    border-radius: 2px ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: transparent ;
+    backdrop-filter: blur(6px) ;
+
+}
+
+
+.left{
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 40px 20px 40px;
+    width: 100%;
+    height: 100%;
+     
+}
+
+
+.divsub{
+    display: flex;
+    width: 100%;
+    height: 42px;
+    justify-content: center;
+    margin: 12px 0 0 0;
+}
+/*=============================================*/
+
+
+.inA , .inB , .inC , .inD{
+    display: flex;
+    width: 100%;
+    transition: 200ms;
+    font-size: 14px;
+    color:red;
+    font-weight: bold;
+    
+}
+
+
+.larzesh{
+    animation: larzesh 200ms forwards;
+}
+
+
+@keyframes larzesh {
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+
+
+.acces{
+    display: flex;
+    width: 100%;
+    transition: 200ms;
+    color:rgb(6, 250, 6);
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  display: block;
+  box-sizing: border-box;
+  margin:0 0 20px 0;
+  padding: 4px;
+  width: 220px;
+  height: 3 2px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 100ms ;
+  color: bisque;
+  user-select: none;
+  
+}
+
+
+
+
+
+input[type='submit']{
+    display: flex;
+    width: 100%;
+    height: 32px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+
+input[type='submit']:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+input[type='submit']:active{
+    background: #084e40;
+    transform: scale(0.9);
+}
+
+
+button{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+button:active{
+    background: #084e40;
+    transform: scale(0.9);
+}
+
+
+.anicharhk{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    border-top: 3px solid rgb(247, 5, 25);
+    animation: spinb 900ms infinite linear;
+    display: none;
+}
+
+@keyframes spinb {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+input[type='text']::placeholder,
+input[type='password']::placeholder,
+input[type="email"]::placeholder {
+    color: rgb(0, 255, 255);
+    user-select: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .bodyFake{
+        padding: 70px 50px 70px 50px;
+        /* padding: 70px; */
+        background-image: url(nope.jfif);
+        background-repeat: no-repeat;
+        background-size: cover cover;
+        background-position: center center;
+    }
+
+    .fp{
+        margin: 100px 0 0 0;
+        padding: 0;
+        width: 100%;
+        height: 500px;
+        /* height: 600px; */
+    }
+
+    .left {
+        padding: 40px;
+        
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]{
+        
+        width: 90%; 
+        margin-left: 2px;       
+        margin-top: 9px;
+        margin-bottom: 29px;
+        padding: 1%;
+        font-size: 15px;
+        border-bottom: 2px solid black
+
+    }
+
+
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder,
+    input[type="email"]::placeholder{
+        font-size: 12px;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus{
+    border-bottom: 5px solid aqua;
+}
+
+
+    input[type="submit"],button{
+        width: 80%;
+        font-size: 130%;
+    }
+
+    input[type='submit']:active , button:active{
+        background: #084e40;
+        transform: scale(0.7);
+    }
+    
+
+
+    .inA , .inB , .inC , .inD{
+        width: 80%;
+        margin-bottom: 0%;
+        font-size: 12px;
+    }
+    .acces{
+        margin-bottom: 0%;
+        font-size: 12px;
+    }
+
+    .divsub{
+        height: 35px;
+        margin: 10px 0 0 0;
+
+    }
+}
+
+/* @media only screen and (max-height: 600px) {
+    .left{
+        padding-top: 0px;
+    }
+} */
+
+@media only screen and (max-width: 401px) {
+    /* .inA , .inB , .inC , .inD{
+        font-size: 16px;
+    } */
+
+    
+
+
+    .left{
+        padding: 10px;
+    }
+
+}
